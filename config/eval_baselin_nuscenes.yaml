@@ -1,0 +1,16 @@
+EXPERIMENT_NAME: 'eval-baseline-nuscenes'
+
+SYSTEM:
+  BENCHMARK: False
+
+LOAD:
+  CHECKPOINT_PATH: 
+
+
+DATASET:
+  DATAROOT: 
+
+EVALUATION:
+  BATCH_SIZE: 1
+  SAVE:
+    QUANTITATIVE_RES_PATH: './results/quantitative/nuscenes/val'

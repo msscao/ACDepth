@@ -1,0 +1,16 @@
+EXPERIMENT_NAME: 'train-baseline-nuscenes'
+
+
+DATASET:
+  AUGMENTATION:
+    COLOR_JITTER:
+      SAMPLE_KEYS: ['color_aug', 'color_aug_pose']
+    GAUSSIAN_NOISE:
+      SAMPLE_KEYS: ['color_aug', 'color_aug_pose']
+    GAUSSIAN_BLUR:
+      SAMPLE_KEYS: ['color_aug', 'color_aug_pose']
+  TEMP_CONTEXT: [0, -1, 1]
+
+SAVE:
+  CHECKPOINT_PATH: 'log/checkpoints/nuscenes_baseline'
+  TOP_K: -1
